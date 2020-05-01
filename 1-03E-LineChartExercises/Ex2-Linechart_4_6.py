@@ -8,8 +8,13 @@
 
 import pandas as pd
 
-import plotly.graph_objs as go
-import plotly.offline as pyo
+import plotly.graph_objects as go
+
+import plotly.io as pio
+
+import chart_studio
+
+import chart_studio.plotly as py
 
 # Create a pandas DataFrame from 2010YumaAZ.csv
 raw_df = pd.read_csv('../Data/2010YumaAZ.csv')
@@ -39,11 +44,22 @@ for df in dfs:
 
 # Define the layout
 
-layout = go.Layout( title='week temp' )
+layout = go.Layout( title='week temp plotly 4.6' )
 
 # Create a fig from data and layout, and plot the fig
 
 figure = go.Figure( data = data, layout = layout )
 
 
-pyo.plot(  figure )
+#Uncomment for local html export
+#html = pio.to_html( fig=figure, auto_play=True )
+
+#f = open(file="lineChartEx-4_6.html", mode='w')
+
+#f.write( html )
+#f.close()
+
+#uncomment for export to chart Studio
+chart_studio.tools.set_config_file( world_readable=True, sharing='public')
+
+py.plot( figure )
