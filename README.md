@@ -1,7 +1,5 @@
 # Plotly-Dashboards-with-Dash
-## Welcome to the course repo!
-Do you want to learn how to create amazing dashboards with Python, Plotly, and
-Dash?
 
-Enroll in our course! Use the link below to get a 30-day trial at 95% off!
-https://www.udemy.com/draft/1575562/?couponCode=GITHUB_DASHBOARDS
+"Plotly-Dashboards-with-Dash" UDEMY course material as well as solved excercises.
+
+It might contain additional material in the for of some "dash" web app for finance quantititave analysis in the near future.
